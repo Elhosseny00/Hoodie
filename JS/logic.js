@@ -56,7 +56,7 @@ const products = [
   {
     productName: "Men pants",
     productPrice: "20",
-    ProductImage: "./images/pants-1.webp",
+    ProductImage: ".././images/pants-1.webp",
   },
   {
     productName: "Men Pants",
