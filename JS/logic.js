@@ -106,7 +106,7 @@ const products = [
   {
     productName: "Men Watche",
     productPrice: "100",
-    ProductImage: "./images/Watche-1.webp",
+    ProductImage: "../images/Watche-1.webp",
   },
   {
     productName: "Men Watche",
