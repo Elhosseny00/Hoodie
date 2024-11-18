@@ -51,3 +51,96 @@ for (let i = 0; i < clickLinks.length; i++) {
     btn.classList.remove("active");
   });
 }
+
+const products = [
+  {
+    productName: "Men pants",
+    productPrice: "20",
+    ProductImage: "./images/pants-1.webp",
+  },
+  {
+    productName: "Men Pants",
+    productPrice: "25",
+    ProductImage: "./images/pants-2.webp",
+  },
+  {
+    productName: "Men Shirt",
+    productPrice: "15",
+    ProductImage: "./images/Shirt-1.webp",
+  },
+  {
+    productName: "Men Shirt",
+    productPrice: "20.5",
+    ProductImage: "./images/Shirt-2.webp",
+  },
+  {
+    productName: "Men Shirt",
+    productPrice: "30",
+    ProductImage: "./images/Shirt-3.webp",
+  },
+  {
+    productName: "Men Shose",
+    productPrice: "40",
+    ProductImage: "./images/Shose-1.webp",
+  },
+  {
+    productName: "Men Shose",
+    productPrice: "35",
+    ProductImage: "./images/Shose-2.webp",
+  },
+  {
+    productName: "Men Shose",
+    productPrice: "35",
+    ProductImage: "./images/Shose-3.webp",
+  },
+  {
+    productName: "Men T-shirt",
+    productPrice: "35",
+    ProductImage: "./images/T-shirt-1.webp",
+  },
+  {
+    productName: "Men T-shirt",
+    productPrice: "30",
+    ProductImage: "./images/T-shirt-2.webp",
+  },
+  {
+    productName: "Men Watche",
+    productPrice: "100",
+    ProductImage: "./images/Watche-1.webp",
+  },
+  {
+    productName: "Men Watche",
+    productPrice: "90",
+    ProductImage: "./images/Watche-2.webp",
+  },
+];
+let cards = document.querySelector(".cards");
+
+for (let i = 0; i < products.length; i++) {
+  let card = document.createElement("div");
+  card.classList.add("card");
+  let topDiv = document.createElement("div");
+  topDiv.classList.add("image-cover");
+  let image = document.createElement("img");
+  image.src = products[i].ProductImage;
+  image.alt = products[i].productName;
+  topDiv.appendChild(image);
+  card.appendChild(topDiv);
+
+  let mainInfo = document.createElement("div");
+  mainInfo.classList.add("main-info");
+  let subInfo = document.createElement("div");
+  subInfo.classList.add("sub-info");
+  let productName = document.createElement("h3");
+  productName.innerHTML = products[i].productName;
+  subInfo.appendChild(productName);
+  let productPrice = document.createElement("h6");
+  productPrice.innerHTML = `$${products[i].productPrice}`;
+  subInfo.appendChild(productPrice);
+  let btn = document.createElement("button");
+  btn.innerHTML = "Shop Now";
+  mainInfo.appendChild(subInfo);
+  mainInfo.appendChild(btn);
+  card.appendChild(mainInfo);
+  cards.append(card);
+}
