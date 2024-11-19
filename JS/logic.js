@@ -61,9 +61,9 @@ const products = [
   {
     productName: "Men Pants",
     productPrice: "25",
-    ProductImage: "Images/pants-2.webp",
+    ProductImage: "./Images/pants-2.webp",
   },
-  {
+  { 
     productName: "Men Shirt",
     productPrice: "15",
     ProductImage: "./images/Shirt-1.webp",
@@ -71,47 +71,47 @@ const products = [
   {
     productName: "Men Shirt",
     productPrice: "20.5",
-    ProductImage: "./images/Shirt-2.webp",
+    ProductImage: "./Images/Shirt-2.webp",
   },
   {
     productName: "Men Shirt",
     productPrice: "30",
-    ProductImage: "./images/Shirt-3.webp",
+    ProductImage: "./Images/Shirt-3.webp",
   },
   {
     productName: "Men Shose",
     productPrice: "40",
-    ProductImage: "./images/Shose-1.webp",
+    ProductImage: "./Images/Shose-1.webp",
   },
   {
     productName: "Men Shose",
     productPrice: "35",
-    ProductImage: "./images/Shose-2.webp",
+    ProductImage: "./Images/Shose-2.webp",
   },
   {
     productName: "Men Shose",
     productPrice: "35",
-    ProductImage: "./images/Shose-3.webp",
+    ProductImage: "./Images/Shose-3.webp",
   },
   {
     productName: "Men T-shirt",
     productPrice: "35",
-    ProductImage: "./images/T-shirt-1.webp",
+    ProductImage: "./Images/T-shirt-1.webp",
   },
   {
     productName: "Men T-shirt",
     productPrice: "30",
-    ProductImage: "./images/T-shirt-2.webp",
+    ProductImage: "./Images/T-shirt-2.webp",
   },
   {
     productName: "Men Watche",
     productPrice: "100",
-    ProductImage: "./images/Watche-1.webp",
+    ProductImage: "./Images/Watche-1.webp",
   },
   {
     productName: "Men Watche",
     productPrice: "90",
-    ProductImage: "./images/Watche-2.webp",
+    ProductImage: "./Images/Watche-2.webp",
   },
 ];
 let cards = document.querySelector(".cards");
